@@ -13,12 +13,12 @@ export function HomePage(){
     return <div>
         <h2>Alkotások:</h2>
         {alkotasLista.map((alkotas) => (
-            <div style={{width: "275px", margin: "10px", float: "left"}} key={alkotas.id}>
+            <span style={{width: "275px",  display: "inline-block", verticalAlign: "top", margin: "10px"}} key={alkotas.id}>
                 <img src={"https://picsum.photos/275?random=" + alkotas.id} alt="random avatar" /><br />
                 {alkotas.nev} ({alkotas.alkotasAzonosito})<br />
                 {alkotas.keletkezesKezdoIdopontjaInt} - {alkotas.tipus}<br />
                 {alkotas.megjelenitendoNev}<br />
-            </div>
+            </span>
             ))}
     </div>
 }
