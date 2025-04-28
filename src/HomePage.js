@@ -18,13 +18,13 @@ export function HomePage(){
         <h2>Alkotások:</h2>
         <ul>
             {alkotasLista.map((alkotas) => (
-            <li key={alkotas.id}>
-                {alkotas.nev}<br />
-                {alkotas.alkotasAzonosito}<br />
-                {alkotas.keletkezesKezdoIdopontjaInt}<br />
-                {alkotas.tipus}<br />
-                {alkotas.megjelenitendoNev}<br />
-            </li>
+                <li key={alkotas.id}>
+                    {alkotas.nev}<br />
+                    {alkotas.alkotasAzonosito}<br />
+                    {alkotas.keletkezesKezdoIdopontjaInt}<br />
+                    {alkotas.tipus}<br />
+                    {alkotas.megjelenitendoNev}<br />
+                </li>
             ))}
         </ul>
     </div>
